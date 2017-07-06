@@ -1,0 +1,12 @@
+<h1>Hellloooooooooo</h1>
+
+<h1>
+  <%= Time.now %>
+</h1>
+<!-- html comments, sent to browser, uses bandwith, can be viewed by anyone-->
+<%# erb comments, optimizes page a little, limits viewership to coders on this end %>
+<%# lets talk to models%>
+<%= @user.name %>
+<% @users.each do |user| %>
+  <%= user.name %>
+<% end %>
